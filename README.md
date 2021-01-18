@@ -5,7 +5,7 @@
     * `display`
         * flex
         * inline-flex
-    * `flex-direction`: 
+    * `flex-direction`
         * row (default)
         * row-reverse
         * column
