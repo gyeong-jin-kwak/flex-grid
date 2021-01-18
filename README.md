@@ -9,7 +9,7 @@
 [Grid](#Grid)
 
 ## Flex
-* `Container` 에 적용하는 속성
+* **Container** 에 적용하는 속성
     * container 가 block / inline-block 효과
     * `display`
         * flex
@@ -28,7 +28,7 @@
         * flex-direction 과 flex-wrap 을 동시에 사용할 수 있는 속성 (축약형)
         * flex-flow: flex-direction flex-wrap;
     
-* `Item` 에 적용하는 속성
+* **Item** 에 적용하는 속성
 
 ## Grid
 * Grid Container `display: grid`
@@ -38,5 +38,5 @@
 * Grid Number : 그리드 칸을 구분하는 선의 번호
 * Grid Gap : 그리드 셀 사이의 간격
 * Grid Area : 그리드 셀의 집합
-* `Container` 에 적용하는 속성
-* `Item` 에 적용하는 속성
+* **Container** 에 적용하는 속성
+* **Item** 에 적용하는 속성
