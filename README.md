@@ -2,8 +2,9 @@
 ## Flex
 * `Container` 에 적용하는 속성
     * container 가 block / inline-block 효과
-    * `display: flex`
-    * `display: inline-flex`
+    * `display`
+        * flex
+        * inline-flex
     * `flex-direction`: 
         * row (default)
         * row-reverse
