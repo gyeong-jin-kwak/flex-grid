@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <link rel="stylesheet" href="../default.css">
+    <style>
+        .flex-container {
+            display: flex;
+            /* display: inline-flex; */
+
+            /* flex-direction: column-reverse; */
+            /* flex-direction: row-reverse; inline-flex 에서는 적용 x */
+
+            /* flex-wrap: wrap; */
+            /* container 가 더 작아졌을때 item들이 떨어질것인지 그대로 팽팽한 속성을 유지할것인지 */
+
+            flex-flow: row wrap;
+            /* flex-flow (축약형) : flex-direction flex-wrap */
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item">helloflexhelloflexhelloflexhelloflexhelloflex</div>
+        <div class="flex-item">abcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabc</div>
+        <div class="flex-item">cccccccccccccccccccc</div>
+    </div>
+</body>
+</html>
