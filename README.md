@@ -39,4 +39,10 @@
 * Grid Gap : 그리드 셀 사이의 간격
 * Grid Area : 그리드 셀의 집합
 * **Container** 에 적용하는 속성
+    * grid-template-rows, grid-template-columns
+        * `repeat()` 함수를 이용해서 여러번 반복하지 않아도 됨
+        * 옵션중 `auto-fill` 을 사용해서 반응형 효과를 나타낼 수 있고
+        * `auto-fit` 을 사용해서 너비가 부족하더라고 100% 차는 박스를 만들수 있다.
+        * 옵션 `minmax(200px, auto)`를 설정할수 있다. 
+    * row-gap, column-gap, gap
 * **Item** 에 적용하는 속성

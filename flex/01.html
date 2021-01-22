@@ -4,27 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flex</title>
-    <link rel="stylesheet" href="../default.css">
+    <link rel="stylesheet" href="../default-flex.css">
     <style>
         .flex-container {
             display: flex;
-            /* display: inline-flex; */
+            flex-direction: column;
+        }
 
-            /* flex-direction: column-reverse; */
-            /* flex-direction: row-reverse; inline-flex 에서는 적용 x */
+        @media (min-width: 600px) {
+            .flex-container {
+                display: flex;
+                flex-direction: row;
+                /* display: inline-flex; */
 
-            /* flex-wrap: wrap; */
-            /* container 가 더 작아졌을때 item들이 떨어질것인지 그대로 팽팽한 속성을 유지할것인지 */
+                /* flex-direction: column-reverse; */
+                /* flex-direction: row-reverse; inline-flex 에서는 적용 x */
 
-            flex-flow: row wrap;
-            /* flex-flow (축약형) : flex-direction flex-wrap */
+                /* flex-wrap: wrap; */
+                /* container 가 더 작아졌을때 item들이 떨어질것인지 그대로 팽팽한 속성을 유지할것인지 */
+
+                /* flex-flow: row wrap; */
+                /* flex-flow (축약형) : flex-direction flex-wrap */
+            }
+
+            .flex-item {
+                flex: 1;
+            }
         }
     </style>
 </head>
 <body>
     <div class="flex-container">
-        <div class="flex-item">helloflexhelloflexhelloflexhelloflexhelloflex</div>
-        <div class="flex-item">abcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabc</div>
+        <div class="flex-item">helloflexhelloflex</div>
+        <div class="flex-item">bcabcabcabcabc</div>
         <div class="flex-item">cccccccccccccccccccc</div>
     </div>
 </body>

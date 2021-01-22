@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <link rel="stylesheet" href="../default-grid.css">
+    <style>
+        .grid-container {
+            display: grid;
+            /***************** grid-template-columns ****************/
+            /* grid-template-columns: 100px 300px 200px; */
+
+            /* fraction 50% 50% */
+            /* grid-template-columns: 1fr 1fr;  */
+
+            /* 양끝은 유동적이고 가운데는 고정 */
+            /* grid-template-columns: 1fr 500px 1fr;  */
+
+            /* 반복 함수를 사용할 수 있음 */
+            /* grid-template-columns: repeat(3, 1fr);  */
+            /* grid-template-columns: repeat(3, 1fr 2fr 1fr);  */
+
+            /* auto-fill, auto-fit option */
+            /* auto-fit일 경우 모자랄 경우 100%로 차게됨 */
+            grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+
+            /***************** grid-template-rows ****************/
+            /* 남아 있는 row가 있을시 자동 auto로 들어가게 됨 */
+            /* grid-template-rows: 200px 200px; */
+
+            /* min-mad 함수 */
+            grid-template-rows: repeat(3, minmax(100px, auto));
+
+            column-gap: 20px;
+            row-gap: 50px;
+        }
+
+        /* .grid-item {
+
+        } */
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">a</div>
+        <div class="grid-item">b</div>
+        <div class="grid-item">c</div>
+        <div class="grid-item">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde qui distinctio repudiandae deleniti eos? Commodi animi ab ut obcaecati, hic corporis atque, unde quas nihil rem, dicta labore ratione sunt?
+        </div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+    </div>
+</body>
+</html>
